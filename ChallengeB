@@ -1,0 +1,101 @@
+live_loop :one do
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  stop
+  
+end
+
+live_loop :two do
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  stop
+end
+
+live_loop :three do
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  stop
+end
+
+
