@@ -42,6 +42,8 @@ live_loop :crashsymhard do
   stop
 end
 
+sleep 8
+
 live_loop :snaredrum2 do
   4.times do
     sample :drum_snare_soft
