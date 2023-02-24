@@ -1,0 +1,62 @@
+# Welcome to Sonic Pi
+
+use_bpm 300
+
+live_loop :beat do
+  use_synth :piano
+  play :d4
+  sleep 1
+  play :e4
+  sleep 1
+  play :d4
+  sleep 1
+  play :g3
+  sleep 1
+  play :b3
+  sleep 1
+  play :d4
+  sleep 1
+  play :e4
+  sleep 1
+  play :d4
+  sleep 1
+  play :b3
+  sleep 1.4
+  play :g4
+  sleep 1.4
+  play :d4
+  sleep 1.4
+  play :b3
+  sleep 1.4
+  play :g3
+  sleep 1
+  play :g4
+  sleep 1
+  play :a4
+  sleep 1
+  play :g4
+  sleep 1
+  play :e4
+  sleep 1
+  play :c4
+  sleep 1
+  play :e4
+  sleep 1
+  play :g4
+  sleep 1
+  play :a4
+  sleep 1
+  play :g4
+  sleep 1
+  play :e4
+  sleep 1
+  play :c5
+  sleep 1
+  play :g4
+  sleep 1
+  play :e4
+  sleep 1
+  play :c4
+end
+
+
