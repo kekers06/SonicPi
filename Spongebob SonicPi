@@ -1,6 +1,18 @@
 use_bpm 120
 
-2.times do
+future_edit = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/highlighted adio.wav"
+
+sample future_edit
+
+sleep 54
+
+spongebob_laugh = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/el esponga goated.wav"
+
+sample spongebob_laugh
+
+sleep 4
+
+1.times do
   use_synth :piano
   play :d4
   sleep 1/3.0
@@ -56,5 +68,4 @@ use_bpm 120
   sleep 1
   play :c4
 end
-
 
