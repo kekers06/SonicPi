@@ -1,55 +1,53 @@
-# Welcome to Sonic Pi
+use_bpm 120
 
-use_bpm 300
-
-live_loop :beat do
+2.times do
   use_synth :piano
   play :d4
-  sleep 1
+  sleep 1/3.0
   play :e4
-  sleep 1
+  sleep 1/3.0
   play :d4
-  sleep 1
+  sleep 1/3.0
   play :g3
-  sleep 1
+  sleep 1/3.0
   play :b3
-  sleep 1
+  sleep 1/3.0
   play :d4
-  sleep 1
+  sleep 1/3.0
   play :e4
-  sleep 1
+  sleep 1/3.0
   play :d4
-  sleep 1
+  sleep 1/3.0
   play :b3
-  sleep 1.4
+  sleep 1/3.0
   play :g4
-  sleep 1.4
+  sleep 1
   play :d4
-  sleep 1.4
+  sleep 1
   play :b3
-  sleep 1.4
+  sleep 1
   play :g3
   sleep 1
   play :g4
   sleep 1
   play :a4
-  sleep 1
+  sleep 1/3.0
   play :g4
-  sleep 1
+  sleep 1/3.0
   play :e4
-  sleep 1
+  sleep 1/3.0
   play :c4
-  sleep 1
+  sleep 1/3.0
   play :e4
-  sleep 1
+  sleep 1/3.0
   play :g4
-  sleep 1
+  sleep 1/3.0
   play :a4
-  sleep 1
+  sleep 1/3.0
   play :g4
-  sleep 1
+  sleep 1/3.0
   play :e4
-  sleep 1
+  sleep 1/3.0
   play :c5
   sleep 1
   play :g4
