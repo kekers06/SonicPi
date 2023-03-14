@@ -8,9 +8,19 @@ define :e4s do
   
   future_edit = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/new audio.wav"
   
-  sample future_edit
+  sample future_edit, start: 0, finish: 0.1, amp: 1
+  sleep 50.58/10
   
-  sleep 51
+  sample future_edit, start: 0.1, finish: 0.2, amp: 2
+  sleep 50.58/10
+  
+  sample future_edit, start: 0.2, finish: 0.3, amp: 3
+  sleep 50.58/10
+  
+  sample future_edit, start: 0.3, finish: 1, amp: 4
+  sleep 50.58/7
+  
+  sleep 28
   
   spongebob_laugh = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/SPONGEBOB-LAUGH-SOUND-EFFECT_1 (1).wav"
   
@@ -34,3 +44,5 @@ define :e4s do
 end
 
 e4s
+
+
