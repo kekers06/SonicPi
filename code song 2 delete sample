@@ -1,0 +1,141 @@
+#Song2 BADHABIT
+use_bpm 84
+use_synth:piano
+djbacky= "C:/Users/okikioluwa ogunnaike/Documents/Audacity/djbackky.wav"
+live_loop :starter do
+  1.times do
+    sample djbacky
+    stop
+  end
+end
+
+vocals = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/Steve Lacy - Bad habits (Vocals).wav"
+
+
+#first line of sheet music.
+
+notes = [:r, :af5, :c6, :df6, :ef6, :df6, :g4, :g4, :af4, :ef3, :c4, :df4, :ef4, :af4, :c4, :df4, :df4, :ef4, :df4, :g3, :af4]
+sleepTimes = [1.8, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.75, 0.5, 0.5, 0.5, 2.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25]
+index = 0
+
+live_loop :arrayfirstline do
+  21.times do
+    play notes[index]
+    sleep sleepTimes[index]
+    index = index + 1
+    stop
+  end
+  index = 0
+end
+
+#line two on music
+
+define :linetwoPF do |a, b, c|
+  1.times do
+    sleep 1.8
+    play a
+    sleep 0.5
+    play :ef3
+    sleep 0.5
+    play :c4
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play :ef4
+    sleep 1.5
+    play :af4
+    sleep 0.5
+    play b
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play :ef4
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play c
+    sleep 0.5
+    play :g4
+    sleep 0.25
+    play :af4
+    sleep 0.25
+    play :af4
+    sleep 0.5
+    play :c5
+    sleep 0.25
+    play :df5
+    sleep 0.25
+    play :f5
+    sleep 0.5
+    play :c5
+    sleep 0.5
+    play :df5
+    sleep 0.25
+    play :ef5
+    sleep 0.25
+    play :f5
+    sleep 0.5
+    play :ef5
+    sleep 0.5
+  end
+end
+
+#octaves
+linetwoPF :af2, :c3, :g4
+
+#line three on sheet musi
+1.times do
+  sleep 0.5
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 1
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 1
+  play :c5
+  sleep 0.5
+  play :df5
+  sleep 0.25
+  play :ef5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 1.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :df5
+  sleep 0.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+end
