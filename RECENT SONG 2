@@ -11,6 +11,9 @@ end
 
 vocals = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/Steve Lacy - Bad habits (Vocals).wav"
 
+biting = "C:/Users/Steal/OneDrive/Documents/Audacity/chompchomp.wav"
+
+
 
 #first line of sheet music.
 
@@ -83,29 +86,36 @@ end
 #octaves
 linetwoPF :af2, :c3, :g4
 
-#line three on sheet musi
+#line three on sheet music
+
+define :fortnite do
+  sleep 0.5
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 1
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+end
+
+fortnite
+
+#Measure #2 on third line
 1.times do
-  sleep 0.5
-  play :ef5
-  sleep 0.25
-  play :c5
-  sleep 0.25
-  play :f5
-  sleep 1
-  play :c5
-  sleep 0.25
-  play :df5
-  sleep 0.25
-  play :ef5
-  sleep 0.25
-  play :c5
-  sleep 0.25
-  play :f5
-  sleep 0.5
-  play :ef5
-  sleep 0.5
-  play :ef5
-  sleep 0.5
   play :c5
   sleep 0.25
   play :df5
@@ -121,6 +131,10 @@ linetwoPF :af2, :c3, :g4
   play :f5
   sleep 0.5
   play :ef5
+end
+
+#measure 3 on third line
+1.times do
   sleep 1.5
   play :c5
   sleep 0.25
@@ -139,3 +153,6 @@ linetwoPF :af2, :c3, :g4
   play :ef5
   sleep 0.5
 end
+
+sample biting
+
