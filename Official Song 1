@@ -1,0 +1,58 @@
+#CustomSong1 Spongebob Theme Song
+define :e4s do
+  x = 1
+  
+  y = 1/3.0
+  
+  use_bpm 120
+  
+  live_loop :drumbeat do
+    20.times do
+      sample :drum_heavy_kick, amp: 2
+      sleep 2
+    end
+    stop
+  end
+  
+  future_edit = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/new audio.wav"
+  
+  sample future_edit, start: 0, finish: 0.1, amp: 1
+  sleep 50.58/10
+  
+  sample future_edit, start: 0.1, finish: 0.2, amp: 2
+  sleep 50.58/10
+  
+  sample future_edit, start: 0.2, finish: 0.3, amp: 3
+  sleep 50.58/10
+  
+  sample future_edit, start: 0.3, finish: 1, amp: 4
+  sleep 50.58/7
+  
+  
+  
+  sleep 28
+  
+  spongebob_laugh = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/SPONGEBOB-LAUGH-SOUND-EFFECT_1 (1).wav"
+  
+  sample spongebob_laugh
+  
+  sleep 3/1.3
+  
+  notes = [:d4, :e4, :d4, :g3, :b3,:d4, :e4, :d4, :b3, :g4, :d4, :b3, :g3, :g4, :a4, :g4, :e4, :c4, :e4, :g4, :a4, :g4, :e4, :c5, :g4, :e4, :c4]
+  sleepTimes =[y, y, y, y, y, y, y, y, y, x, x, x, x, x, y, y, y, y, y, y, y, y, y, x, x, x, x]
+  indexa = 0
+  indexb = 0
+  live_loop :song do
+    27.times  do
+      play notes[indexa]
+      indexa = indexa + 1
+      sleep sleepTimes[indexb]
+      indexb = indexb + 1
+    end
+    stop
+  end
+end
+
+e4s
+
+
