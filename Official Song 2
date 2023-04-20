@@ -1,7 +1,8 @@
 #Song2 BADHABIT
 use_bpm 84
-use_synth :piano
-djbacky= "C:/Users/okikioluwa ogunnaike/Documents/Audacity/djbackky.wav"
+use_synth:piano
+
+djbacky= "C:/Users/okikioluwa ogunnaike/Downloads/djbackky.wav"
 
 s = 0.25
 a = 0
@@ -18,40 +19,39 @@ live_loop :three do
   stop
 end
 
-
 vocals = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/Steve Lacy - Bad habits (Vocals).wav"
 
-biting = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/biting-the-tongue yoyo.wav"
+biting = "C:/Users/okikioluwa ogunnaike/Downloads/biting-the-tongue yoyo.wav"
 
-tolate = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/to late to.wav"
+tolate = "C:/Users/okikioluwa ogunnaike/Downloads/to late to.wav"
+
+
 
 
 #define function
-live_loop :start do
-  define :fortnite do
-    sleep 0.5
-    play :ef5
-    sleep 0.25
-    play :c5
-    sleep 0.25
-    play :f5
-    sleep 1
-    play :c5
-    sleep 0.25
-    play :df5
-    sleep 0.25
-    play :ef5
-    sleep 0.25
-    play :c5
-    sleep 0.25
-    play :f5
-    sleep 0.5
-    play :ef5
-    sleep 0.5
-    play :ef5
-    sleep 0.5
-  end
-  stop
+
+define :fortnite do
+  sleep 0.5
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 1
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
 end
 
 
@@ -59,78 +59,68 @@ end
 
 notes = [:r, :af5, :c6, :df6, :ef6, :df6, :g4, :g4, :af4, :ef3, :c4, :df4, :ef4, :af4, :c4, :df4, :df4, :ef4, :df4, :g3, :af4]
 sleepTimes = [1.8, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.75, 0.5, 0.5, 0.5, 2.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25]
-i = 0
+index = 0
 
-live_loop :statement do
-  20.times do
-    if i <= 20
-      play notes[i]
-      sleep sleepTimes[i]
-      i = i + 1
-    elsif i >= 20
-      stop
-    end
+live_loop :arrayfirstline do
+  21.times do
+    play notes[index]
+    sleep sleepTimes[index]
+    index = index + 1
+    stop
   end
+  index = 0
 end
-
 
 #line two on music
-live_loop :middle do
-  define :linetwoPF do |a, b, c, d, e, f|
-    1.times do
-      sleep 1.8
-      play a
-      sleep 0.5
-      play :ef3
-      sleep 0.5
-      play :c4
-      sleep 0.5
-      play :df4
-      sleep 0.5
-      play :ef4
-      sleep 1.5
-      play :af4
-      sleep 0.5
-      play b
-      sleep 0.5
-      play :df4
-      sleep 0.5
-      play :ef4
-      sleep 0.5
-      play :df4
-      sleep 0.5
-      play c
-      sleep 0.5
-      play :g4
-      sleep 0.25
-      play :af4
-      sleep 0.25
-      play :af4
-      sleep 0.5
-      play :c5
-      sleep 0.25
-      play :df5
-      sleep 0.25
-      play :f5
-      sleep 0.5
-      play :c5
-      sleep 0.5
-      play :df5
-      sleep 0.25
-      play d
-      sleep 0.25
-      play e
-      sleep 0.5
-      play f
-      sleep 0.5
-    end
+
+define :linetwoPF do |a, b, c, d, e, f|
+  1.times do
+    sleep 1.8
+    play a
+    sleep 0.5
+    play :ef3
+    sleep 0.5
+    play :c4
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play :ef4
+    sleep 1.5
+    play :af4
+    sleep 0.5
+    play b
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play :ef4
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play c
+    sleep 0.5
+    play :g4
+    sleep 0.25
+    play :af4
+    sleep 0.25
+    play :af4
+    sleep 0.5
+    play :c5
+    sleep 0.25
+    play :df5
+    sleep 0.25
+    play :f5
+    sleep 0.5
+    play :c5
+    sleep 0.5
+    play :df5
+    sleep 0.25
+    play d
+    sleep 0.25
+    play e
+    sleep 0.5
+    play f
+    sleep 0.5
   end
-  stop
-end
-live_loop :pursue do
-  sleep 35.5
-  sample tolate
-  stop
 end
 
 #octaves
@@ -142,34 +132,30 @@ sleep 0.5
 #second line of sheet music below
 fortnite
 
+sleep 0.5
 #Measure #2 on third line
 fortnite
 
 sleep 0.5
 #measure 3 on third line
-live_loop :end do
-  1.times do
-    sleep 1.5
-    play :c5
-    sleep 0.25
-    play :df5
-    sleep 0.25
-    play :f5
-    sleep 0.5
-    play :df5
-    sleep 0.5
-    play :c5
-    sleep 0.25
-    play :df5
-    sleep 0.25
-    play :f5
-    sleep 0.5
-    play :ef5
-    sleep 0.5
-  end
-  stop
+1.times do
+  sleep 1.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :df5
+  sleep 0.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
 end
-
-sleep 5
 
 sample biting
