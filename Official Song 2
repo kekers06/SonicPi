@@ -1,8 +1,9 @@
 #Song2 BADHABIT
 use_bpm 84
-use_synth:piano
+use_synth :prophet
 
-djbacky= "C:/Users/okikioluwa ogunnaike/Downloads/djbackky.wav"
+djbacky= "C:/Users/Steal/Downloads/djbackky.wav"
+
 
 s = 0.25
 a = 0
@@ -19,14 +20,12 @@ live_loop :three do
   stop
 end
 
-vocals = "C:/Users/okikioluwa ogunnaike/Documents/Audacity/Steve Lacy - Bad habits (Vocals).wav"
+# I NEED THE ONE ABOVE
 
-biting = "C:/Users/okikioluwa ogunnaike/Downloads/biting-the-tongue yoyo.wav"
-
-tolate = "C:/Users/okikioluwa ogunnaike/Downloads/to late to.wav"
+biting = "C:/Users/Steal/Downloads/biting-the-tongue yoyo.wav"
 
 
-
+tolate = "C:/Users/Steal/Downloads/to late to.wav"
 
 #define function
 
@@ -61,14 +60,16 @@ notes = [:r, :af5, :c6, :df6, :ef6, :df6, :g4, :g4, :af4, :ef3, :c4, :df4, :ef4,
 sleepTimes = [1.8, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.75, 0.5, 0.5, 0.5, 2.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25]
 index = 0
 
-live_loop :arrayfirstline do
-  21.times do
-    play notes[index]
-    sleep sleepTimes[index]
-    index = index + 1
-    stop
+live_loop :statement do
+  20.times do
+    if i <= 20
+      play notes[i]
+      sleep sleepTimes[i]
+      i = i + 1
+    elsif i >= 20
+      stop
+    end
   end
-  index = 0
 end
 
 #line two on music
