@@ -5,6 +5,7 @@ define :e4s do
   y = 1/3.0
   
   use_bpm 120
+  use_synth :prophet
   
   live_loop :drumbeat do
     20.times do
@@ -14,8 +15,7 @@ define :e4s do
     stop
   end
   
-  future_edit = "C:/Users/okikioluwa ogunnaike/Downloads/new audio.wav"
-  
+  future_edit = "C:/Users/Steal/Downloads/new audio.wav"
   
   
   sample future_edit, start: 0, finish: 0.1, amp: 1
@@ -31,10 +31,9 @@ define :e4s do
   sleep 50.58/7
   
   
-  
   sleep 28
   
-  spongebob_laugh = "C:/Users/okikioluwa ogunnaike/Downloads/SPONGEBOB-LAUGH-SOUND-EFFECT_1.wav"
+  spongebob_laugh = "C:/Users/Steal/Downloads/SPONGEBOB-LAUGH-SOUND-EFFECT_1.wav"
   
   sample spongebob_laugh
   
@@ -57,11 +56,134 @@ end
 
 e4s
 
-sleep 30
+sleep 13
 
-savage21 = "C:/Users/okikioluwa ogunnaike/Downloads/21-savage-hold-up-adlib-sound-effect-sfx.wav"
+lilremix = "C:/Users/Steal/OneDrive/Documents/Audacity/SpongeBob-Trap-Remix-_Krusty-Krab_.wav"
+
+savage21 = "C:/Users/Steal/Downloads/21-savage-hold-up-adlib-sound-effect-sfx (1).wav"
+
+sample lilremix
 
 live_loop :savage do
-  sample savage21
+  10.times do
+    sample savage21
+    sleep 0.8
+  end
+  stop
+end
+
+sleep 24
+
+define :blue do
+  play:B4
+  sleep 0.75
+  play:As4
+  sleep 0.25
+  play:Gs4
+  play:B4
+  sleep 0.75
+  play:Cs5
+  sleep 0.25
+  play:B4
+  sleep 1
+  play:Gs4
+  play:E5
   sleep 1
 end
+
+define :yellow do
+  play :r
+  sleep 1
+  play:E5
+  play:Gs4
+  play:B4
+  sleep 1
+  play:B4
+  sleep 1
+  play:E5
+  play:Gs4
+  sleep 1
+end
+
+define :pink do
+  play:E4
+  sleep 1
+  play:E5
+  play:Gs4
+  sleep 2
+  play:E5
+  play:Gs4
+  sleep 1
+end
+
+
+live_loop:background_notes do
+  25.times do
+    play:E3, amp: 0.25
+    sleep 1
+    play:B3, amp: 0.25
+    play:E4, amp: 0.25
+    sleep 1
+    play:B3, amp: 0.25
+    sleep 1
+    play:E4, amp: 0.25
+    sleep 1
+    
+    play:E3, amp: 0.5
+    sleep 1
+    play:B3, amp: 0.5
+    play:E4, amp: 0.5
+    sleep 1
+    play:B3, amp: 0.5
+    sleep 1
+    play:E4, amp: 0.5
+    sleep 1
+    
+    play:E3, amp: 0.75
+    sleep 1
+    play:B3, amp: 0.75
+    play:E4, amp: 0.75
+    sleep 1
+    play:B3, amp: 0.75
+    sleep 1
+    play:E4, amp: 0.75
+    sleep 1
+    
+    25.times do
+      play:E3, amp: 1
+      sleep 1
+      play:B3, amp: 1
+      play:E4, amp: 1
+      sleep 1
+      play:B3, amp: 1
+      sleep 1
+      play:E4, amp: 1
+      sleep 1
+    end
+    stop
+  end
+end
+
+# Measure 1
+play :r
+sleep 1
+play:E4
+play:Gs4
+sleep 2
+play:E5
+play:Gs4
+sleep 1
+
+pink
+
+yellow
+
+yellow
+
+blue
+
+yellow
+
+blue
+
+pink
