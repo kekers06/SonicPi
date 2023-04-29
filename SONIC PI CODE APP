@@ -1,0 +1,161 @@
+#Song2 BADHABIT
+use_bpm 84
+use_synth :prophet
+
+djbacky= "C:/Users/Steal/Downloads/djbackky.wav"
+biting = "C:/Users/Steal/Downloads/biting-the-tongue yoyo.wav"
+tolate = "C:/Users/Steal/Downloads/to late to.wav"
+a=0
+f = 0.25
+s = 0.25
+live_loop :three do
+  4.times do
+    sample djbacky, start: s, finish: f, amp: a
+    s
+    a = a + 0.25
+    f = f + 0.25
+    sleep 2.538/4
+  end
+  stop
+end
+
+# I NEED THE ONE ABOVE
+
+#define function
+
+define :fortnite do
+  sleep 0.5
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 1
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :ef5
+  sleep 0.25
+  play :c5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+end
+
+
+#first line of sheet music.
+
+notes = [:r, :af5, :c6, :df6, :ef6, :df6, :g4, :g4, :af4, :ef3, :c4, :df4, :ef4, :af4, :c4, :df4, :df4, :ef4, :df4, :g3, :af4]
+sleepTimes = [1.8, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.75, 0.5, 0.5, 0.5, 2.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25]
+index = 0
+i=index
+define :ap do |ramp|
+  live_loop :statement do
+    20.times do
+      if i<=20
+        play notes[i], amp: ramp
+        sleep sleepTimes[i]
+        i = i + 1
+      elsif i>=20
+        stop
+      end
+    end
+  end
+end
+ap 4
+
+
+
+#line two on music
+
+define :linetwoPF do |a, b, c, d, e, f|
+  1.times do
+    sleep 1.8
+    play a
+    sleep 0.5
+    play :ef3
+    sleep 0.5
+    play :c4
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play :ef4
+    sleep 1.5
+    play :af4
+    sleep 0.5
+    play b
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play :ef4
+    sleep 0.5
+    play :df4
+    sleep 0.5
+    play c
+    sleep 0.5
+    play :g4
+    sleep 0.25
+    play :af4
+    sleep 0.25
+    play :af4
+    sleep 0.5
+    play :c5
+    sleep 0.25
+    play :df5
+    sleep 0.25
+    play :f5
+    sleep 0.5
+    play :c5
+    sleep 0.5
+    play :df5
+    sleep 0.25
+    play d
+    sleep 0.25
+    play e
+    sleep 0.5
+    play f
+    sleep 0.5
+  end
+end
+
+#octaves
+linetwoPF :af2, :c3, :g4, :ef5, :f5, :ef5
+
+linetwoPF :af2, :c3, :g4, :ef3, :f5,:ef3
+
+sleep 0.5
+#second line of sheet music below
+fortnite
+
+sleep 0.5
+#Measure #2 on third line
+fortnite
+
+sleep 0.5
+#measure 3 on third line
+1.times do
+  sleep 1.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :df5
+  sleep 0.5
+  play :c5
+  sleep 0.25
+  play :df5
+  sleep 0.25
+  play :f5
+  sleep 0.5
+  play :ef5
+  sleep 0.5
+end
+
+sample biting
