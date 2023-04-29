@@ -4,7 +4,6 @@ use_synth :prophet
 
 djbacky= "C:/Users/Steal/Downloads/djbackky.wav"
 biting = "C:/Users/Steal/Downloads/biting-the-tongue yoyo.wav"
-tolate = "C:/Users/Steal/Downloads/to late to.wav"
 a=0
 f = 0.25
 s = 0.25
